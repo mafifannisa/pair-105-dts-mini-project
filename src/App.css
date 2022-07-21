@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&family=Red+Hat+Display:wght@300;700&display=swap');
+
+
+body {
+  font-family: 'Open Sans',
+    sans-serif;
+    
+  background-color: #111;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+}
+.app {
+  background-color: #111;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-bg {
+  background-color: #111;
+  font-size: 1.1rem;
+  font-weight: 800;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container-bg {
+  background-color: #111;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.footer-bg {
+  background-color: #7A4069;
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #fff;
+  height: 4rem;
+}
+
+.caption-carousel {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.rowX {
+  margin-left: 20px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.scrollContainer {
+  width: 50%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row__posters {
+  display: flex;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding: 20px;
+}
+.row__posters::-webkit-scrollbar {
+  display: none;
+}
+.row__poster {
+  object-fit: contain;
+  width: 100%;
+  max-height: 100px;
+  transition: transform 450ms;
+  margin-right: 10px;
+}
+.row__poster:hover {
+  transform: scale(1.08);
+}
+.row__posterLarge {
+  max-height: 250px;
+}
+.row__posterLarge:hover {
+  transform: scale(1.09);
 }
